@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketly - Галерея проекта</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        body {
+            background: var(--eerie-black-2);
+            padding: 20px;
+        }
+        .gallery-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .gallery-header h1 {
+            color: var(--white-2);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .gallery-header p {
+            color: var(--light-gray);
+            font-size: 1.125rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--orange-yellow-crayola);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: var(--white-2);
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .gallery-item {
+            background: var(--eerie-black-1);
+            border: 1px solid var(--jet);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-4);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            .gallery-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <a href="index.html#portfolio" class="back-link">← Назад к портфолио</a>
+        
+        <div class="gallery-header">
+            <h1>Marketly</h1>
+            <p>Интернет-магазин с полным функционалом</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="./assets/images/Pasted image.png" alt="Marketly - Главная страница">
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/Pasted image (7).png" alt="Marketly - Корзина">
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/Pasted image (6).png" alt="Marketly - Профиль">
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/Pasted image (5).png" alt="Marketly - Заказы">
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/Pasted image (4).png" alt="Marketly - Оплата">
+            </div>
+            <div class="gallery-item">
+                <img src="./assets/images/Pasted image (3).png" alt="Marketly - Авторизация">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -44,8 +44,9 @@
           modalImg.src = avatar.src;
           modalImg.alt = avatar.alt;
         }
-        if (title && modalTitle) modalTitle.innerHTML = title.innerHTML;
-        if (text && modalText) modalText.innerHTML = text.innerHTML;
+        // Используем textContent вместо innerHTML для предотвращения XSS
+        if (title && modalTitle) modalTitle.textContent = title.textContent;
+        if (text && modalText) modalText.textContent = text.textContent;
 
         testimonialsModalFunc();
       });
@@ -144,11 +145,12 @@
   // Mapping navigation button text to page data-page attribute
   const pageMapping = {
     "главная": "главная",
-    "главная": "главная",
     "кейсы": "кейсы",
     "тарифы": "тарифы",
     "заказать & обсудить задачу": "заказать & обсудить задачу",
-    "контакты": "контакты"
+    "связаться": "связаться",
+    "Связаться": "связаться",
+    "Обсудить задачу": "заказать & обсудить задачу"
   };
 
   // Function to switch page
@@ -185,6 +187,9 @@
 
     window.scrollTo(0, 0);
   }
+
+  // Expose switchPage to global scope so it can be called by selectTariff
+  window.switchPage = switchPage;
 
   // add event to all nav link (only if they exist)
   if (navigationLinks.length > 0 && pages.length > 0) {
@@ -265,4 +270,36 @@
     });
   }
 
+  // Add event listeners for tariff selection buttons (replacing inline onclick)
+  const tariffButtons = document.querySelectorAll(".btn-select-tariff");
+  tariffButtons.forEach(function(button) {
+    button.addEventListener("click", function(e) {
+      e.preventDefault();
+      // Get tariff ID from data attribute or button text
+      const tariffId = this.getAttribute("data-tariff-id") || 
+                       this.textContent.trim().toLowerCase().replace(/\s+/g, "-");
+      selectTariff(tariffId);
+    });
+  });
+
 })(); // End of IIFE
+
+// Global selectTariff function
+function selectTariff(tariffId) {
+  // Switch to Order page
+  if (window.switchPage) {
+    window.switchPage("заказать & обсудить задачу");
+  }
+
+  // Pre-select tariff in the form
+  const tariffSelect = document.getElementById("tariff");
+  if (tariffSelect) {
+    tariffSelect.value = tariffId;
+  }
+
+  // Also pre-select "Web site" as order type if reasonable
+  const orderTypeSelect = document.getElementById("order-type");
+  if (orderTypeSelect) {
+    orderTypeSelect.value = "website";
+  }
+}
