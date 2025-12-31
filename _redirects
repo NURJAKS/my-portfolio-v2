@@ -1,0 +1,4 @@
+# Cloudflare Pages redirects
+# SPA fallback - все запросы к index.html (кроме существующих файлов)
+/*    /index.html   200
+

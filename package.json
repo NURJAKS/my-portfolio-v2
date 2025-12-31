@@ -1,0 +1,21 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Portfolio website for Cloudflare Pages",
+  "scripts": {
+    "build": "echo 'No build step required - static site'",
+    "deploy": "wrangler pages deploy . --project-name=portfolio-website",
+    "deploy:prod": "wrangler pages deploy . --project-name=portfolio-website --branch=main"
+  },
+  "keywords": [
+    "portfolio",
+    "static-site",
+    "cloudflare-pages"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
+

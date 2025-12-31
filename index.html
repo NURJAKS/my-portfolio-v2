@@ -1,965 +1,935 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Разработка цифровых решений | Веб-разработка, MVP, Автоматизация</title>
-  
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Разработка цифровых решений: веб-сайты, приложения, автоматизация бизнес-процессов, MVP, игры, AI чат-боты. От идеи до запуска. Профессиональная разработка в Казахстане.">
-  <meta name="keywords" content="веб-разработка, создание сайтов, разработка приложений, MVP, автоматизация, чат-боты, AI, разработка игр, веб-дизайн, Казахстан">
-  <meta name="author" content="Nurtech Dev">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="Russian">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://nurtech.dev/">
-  <meta property="og:title" content="Разработка цифровых решений | Веб-разработка, MVP, Автоматизация">
-  <meta property="og:description" content="Разработка цифровых решений: веб-сайты, приложения, автоматизация бизнес-процессов, MVP, игры, AI чат-боты. От идеи до запуска.">
-  <meta property="og:image" content="./assets/images/image.png">
-  <meta property="og:locale" content="ru_RU">
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://nurtech.dev/">
-  <meta property="twitter:title" content="Разработка цифровых решений | Веб-разработка, MVP, Автоматизация">
-  <meta property="twitter:description" content="Разработка цифровых решений: веб-сайты, приложения, автоматизация бизнес-процессов, MVP, игры, AI чат-боты. От идеи до запуска.">
-  <meta property="twitter:image" content="./assets/images/image.png">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-  <link rel="icon" type="image/png" href="./assets/images/logo.ico">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/image.png" alt="Разработка цифровых решений" width="80">
-        </figure>
-
-        <div class="info-content">
-
-          <p class="title">Разработка цифровых решений</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Показать контакты</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:nurtech.dev@gmail.com" class="contact-link">nurtech.dev@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Телефон</p>
-
-              <a href="tel:+77002174701" class="contact-link">+7 (700) 217-47-01</a>
-            </div>
-
-          </li>
-
-
-        </ul>
-
-        <div class="separator"></div>
-
-
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>Главная</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Кейсы</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Тарифы</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Заказать & Обсудить задачу</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Связаться</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="главная">
-
-        <header>
-          <h2 class="h2 article-title">Главная</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Создаем цифровые продукты, которые работают на ваш бизнес. Веб-сайты, приложения, автоматизации и сложные
-            системы
-            — от идеи до запуска.
-          </p>
-
-          <p>
-            Наш фокус — реальный результат: рост продаж, автоматизация процессов и удобство для клиентов.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Наши услуги</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Создание сайтов</h4>
-
-                <p class="service-item-text">
-                  Разрабатываем сайты под задачи бизнеса — от лендингов до сложных веб-платформ с удобным управлением и
-                  масштабированием.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="automation icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Автоматизация бизнес-процессов</h4>
-
-                <p class="service-item-text">
-                  Разрабатываем индивидуальные решения для автоматизации отдельных задач и процессов в бизнесе, подбирая
-                  оптимальный формат под текущие потребности.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mvp icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">MVP и запуск продуктов</h4>
-
-                <p class="service-item-text">
-                  Помогаем превратить идею в работающий продукт: проектируем, разрабатываем MVP и подготавливаем к
-                  первому запуску.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="support icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Поддержка и развитие проектов</h4>
-
-                <p class="service-item-text">
-                  Сопровождаем проекты после запуска: исправляем ошибки, дорабатываем функционал и развиваем продукт по
-                  мере роста бизнеса.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Создание игр</h4>
-
-                <p class="service-item-text">
-                  Разрабатываем игровые и интерактивные проекты для различных платформ с акцентом на механику и качество
-                  реализации.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Создание научных проектов</h4>
-
-                <p class="service-item-text">
-                  Разрабатываем исследовательские и научные проекты, создавая цифровые решения для анализа,
-                  экспериментов и образовательных задач.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="testing icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Тестирование и аудит</h4>
-                <p class="service-item-text">
-                  Проверяем сайты и веб-приложения на ошибки, уязвимости и проблемы безопасности, повышая стабильность и
-                  доверие.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="ai bot icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI Чат-боты</h4>
-                <p class="service-item-text">
-                  Разрабатываем умных ботов на базе ИИ для автоматизации поддержки клиентов, продаж и внутренних
-                  процессов.
-                </p>
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-
-      </article>
-
-
-
-
-
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="кейсы">
-
-        <header>
-          <h2 class="h2 article-title">Кейсы</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>Все</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Веб-дизайн</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Приложения</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Веб-разработка</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Выберите категорию</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>Все</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Разработка цифровых решений | Веб-разработка, MVP, Автоматизация
+    </title>
+    <meta
+      name="description"
+      content="Разработка цифровых решений: веб-сайты, приложения, автоматизация бизнес-процессов, MVP, игры, AI чат-боты. От идеи до запуска. Профессиональная разработка в Казахстане."
+    />
+    <meta
+      name="keywords"
+      content="веб-разработка, создание сайтов, разработка приложений, MVP, автоматизация, чат-боты, AI, разработка игр, веб-дизайн, Казахстан"
+    />
+    <meta name="author" content="Nurtech Dev" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Russian" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nurtech.dev/" />
+    <meta
+      property="og:title"
+      content="Разработка цифровых решений | Веб-разработка, MVP, Автоматизация"
+    />
+    <meta
+      property="og:description"
+      content="Разработка цифровых решений: веб-сайты, приложения, автоматизация бизнес-процессов, MVP, игры, AI чат-боты. От идеи до запуска."
+    />
+    <meta property="og:image" content="./assets/images/image.png" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://nurtech.dev/" />
+    <meta
+      property="twitter:title"
+      content="Разработка цифровых решений | Веб-разработка, MVP, Автоматизация"
+    />
+    <meta
+      property="twitter:description"
+      content="Разработка цифровых решений: веб-сайты, приложения, автоматизация бизнес-процессов, MVP, игры, AI чат-боты. От идеи до запуска."
+    />
+    <meta property="twitter:image" content="./assets/images/image.png" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/image.png"
+      type="image/png"
+    />
+    <link rel="icon" type="image/png" href="./assets/images/image.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="main-content">
+        <nav class="navbar">
+          <div class="navbar-container">
+            <a href="./" class="navbar-logo"
+              ><img
+                src="./assets/images/image-removebg-preview.png"
+                alt="TechFlow Logo"
+                class="logo-img"
+            /></a>
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <button class="navbar-link active" data-nav-link>
+                  Главная
+                </button>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Веб-дизайн</button>
+              <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>Кейсы</button>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Приложения</button>
+              <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>Тарифы</button>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Веб-разработка</button>
+              <li class="navbar-item">
+                <button class="navbar-link navbar-link-cta" data-nav-link>
+                  Заказать
+                </button>
               </li>
-
+              <li class="navbar-item">
+                <button class="navbar-link navbar-link-cta" data-nav-link>
+                  Связаться
+                </button>
+              </li>
             </ul>
-
           </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="веб-разработка">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Веб-разработка</p>
-                <p class="project-description">Финансовая панель управления для анализа расходов и доходов.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="веб-разработка">
-              <div class="project-card-wrapper">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="digital-studio" loading="lazy">
-                  
-                  <h3 class="project-title project-title-overlay">
-                    <a href="https://digital-studio.pages.dev" target="_blank" style="text-decoration: none; color: inherit;">digital-studio.pages.dev</a>
-                  </h3>
-                </figure>
-
-                <p class="project-category">Веб-разработка</p>
-                <p class="project-description">Многостраничный сайт для цифрового агентства. Включает страницы с адаптивным дизайном и интерактивными элементами.</p>
-
-              </div>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="веб-разработка">
-              <div class="project-card-wrapper">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/image hospital.png" alt="medicine-center" loading="lazy">
-                  
-                  <h3 class="project-title project-title-overlay">
-                    <a href="https://medicinecenter.pages.dev/" target="_blank" style="text-decoration: none; color: inherit;">medicinecenter.pages.dev</a>
-                  </h3>
-                </figure>
-
-                <p class="project-category">Веб-разработка</p>
-                <p class="project-description">Корпоративный сайт для медицинского или юридического центра с услугами, специалистами и системой онлайн-записи.</p>
-
-              </div>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="веб-разработка">
-              <div class="project-card-wrapper">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/image car.png" alt="auto-market" loading="lazy">
-                  
-                  <h3 class="project-title project-title-overlay">
-                    <a href="https://auto-market.pages.dev/" target="_blank" style="text-decoration: none; color: inherit;">auto-market.pages.dev</a>
-                  </h3>
-                </figure>
-
-                <p class="project-category">Веб-разработка</p>
-                <p class="project-description">Многостраничный сайт для автосалона с каталогом автомобилей, фильтрацией и страницами отдельных предложений.</p>
-
-              </div>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="веб-разработка">
-              <div class="project-card-wrapper">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/image lms.png" alt="lms-platform" loading="lazy">
-                  
-                  <h3 class="project-title project-title-overlay">
-                    <a href="https://lmsplatform.pages.dev" target="_blank" style="text-decoration: none; color: inherit;">lmsplatform.pages.dev</a>
-                  </h3>
-                </figure>
-
-                <p class="project-category">Веб-разработка</p>
-                <p class="project-description">Демонстрационный проект образовательной платформы с каталогом курсов, страницами обучения и личным кабинетом.</p>
-
-              </div>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="веб-разработка">
-              <div class="project-card-wrapper">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Pasted market.png" alt="marketly" loading="lazy">
-                  
-                  <h3 class="project-title project-title-overlay">
-                    <a href="marketly-gallery.html" style="text-decoration: none; color: inherit;">Marketly</a>
-                  </h3>
-                </figure>
-
-                <p class="project-category">Веб-разработка</p>
-                <p class="project-description">Интернет-магазин с каталогом товаров, корзиной, системой авторизации и оплаты.</p>
-
-              </div>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="приложения">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Приложения</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="веб-дизайн">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Веб-дизайн</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="веб-дизайн">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Веб-дизайн</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="веб-разработка">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Веб-разработка</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="приложения">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Приложения</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="веб-разработка">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Веб-разработка</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-
-
-      </article>
-
-
-
-
-
-      <!--
-        - #TARIFFS PAGE
-      -->
-
-      <article class="tariffs" data-page="тарифы">
-
-        <header>
-          <h2 class="h2 article-title">Тарифы</h2>
-        </header>
-
-        <section class="tariffs-section">
-
-          <ul class="tariffs-list">
-
-            <li class="tariff-item">
-              <div class="tariff-card">
-                <h4 class="h4 tariff-name">Быстрый запуск</h4>
-                <div class="tariff-price">от 30 000 ₸</div>
-                <ul class="tariff-features">
-                  <li>Простой лендинг</li>
-                  <li>До 5 страниц</li>
-                  <li>Базовая SEO-оптимизация</li>
-                  <li>Поддержка 1 месяц</li>
-                </ul>
-                <button class="btn-select-tariff" data-tariff-id="basic">Выбрать</button>
-              </div>
-            </li>
-            <li class="tariff-item">
-              <div class="tariff-card">
-                <h4 class="h4 tariff-name">Решение под задачу</h4>
-                <div class="tariff-price">от 100 000 ₸</div>
-                <ul class="tariff-features">
-                  <li>Многостраничный сайт</li>
-                  <li>До 20 страниц</li>
-                  <li>Расширенная SEO-оптимизация</li>
-                  <li>Поддержка 3 месяца</li>
-                </ul>
-                <button class="btn-select-tariff" data-tariff-id="standard">Выбрать</button>
-              </div>
-            </li>
-
-
-
-
-
-            <li class="tariff-item">
-              <div class="tariff-card">
-                <h4 class="h4 tariff-name">Разработка игр</h4>
-                <div class="tariff-price">от 250 000 ₸</div>
-                <ul class="tariff-features">
-                  <li class="highlight">Игровой проект средней сложности</li>
-                  <li>PC и Mobile</li>
-                  <li>Основной геймплей и визуал</li>
-                  <li>Поддержка 1 месяц</li>
-                </ul>
-                <button class="btn-select-tariff" data-tariff-id="game-dev">Выбрать</button>
-              </div>
-            </li>
-
-            <li class="tariff-item">
-              <div class="tariff-card">
-                <h4 class="h4 tariff-name">Чат-бот</h4>
-                <div class="tariff-price">от 40 000 ₸</div>
-                <ul class="tariff-features">
-                  <li>Простой лендинг</li>
-                  <li>До 5 страниц</li>
-                  <li>Базовая SEO-оптимизация</li>
-                  <li>Поддержка 1 месяц</li>
-                </ul>
-                <button class="btn-select-tariff" data-tariff-id="chatbot">Выбрать</button>
-              </div>
-            </li>
-
-            <li class="tariff-item">
-              <div class="tariff-card">
-                <h4 class="h4 tariff-name">CRM / автоматизация</h4>
-                <div class="tariff-price">от 50 000 ₸</div>
-                <ul class="tariff-features">
-                  <li>Многостраничный сайт</li>
-                  <li>До 20 страниц + Интеграция CMS</li>
-                  <li>Расширенная SEO-оптимизация</li>
-                  <li>Поддержка 3 месяца</li>
-                </ul>
-                <button class="btn-select-tariff" data-tariff-id="crm">Выбрать</button>
-              </div>
-            </li>
-
-            <li class="tariff-item">
-              <div class="tariff-card">
-                <h4 class="h4 tariff-name">ИИ ассистент</h4>
-                <div class="tariff-price">от 100 000 ₸</div>
-                <ul class="tariff-features">
-                  <li class="highlight">Разработка интеллектуального ассистента</li>
-                  <li>Интеграция CRM и API</li>
-                  <li>Поддержка 3 месяцев</li>
-                </ul>
-                <button class="btn-select-tariff" data-tariff-id="ai-assistant">Выбрать</button>
-              </div>
-            </li>
-
-            <li class="tariff-item">
-              <div class="tariff-card">
-                <h4 class="h4 tariff-name">Тестирование и аудит</h4>
-                <div class="tariff-price">от 20 000 ₸</div>
-                <ul class="tariff-features">
-                  <li class="highlight">Проверка сайта на уязвимости</li>
-                  <li>Поиск ошибок и багов</li>
-                  <li>Анализ логики и устойчивости</li>
-                  <li>Рекомендации по улучшению</li>
-                </ul>
-                <button class="btn-select-tariff" data-tariff-id="testing">Выбрать</button>
-              </div>
-            </li>
-
-            <li class="tariff-item">
-              <div class="tariff-card">
-                <h4 class="h4 tariff-name">MVP / запуск продукта</h4>
-                <div class="tariff-price">от 100 000 ₸</div>
-                <ul class="tariff-features">
-                  <li class="highlight">Для стартапов и новых продуктов</li>
-                  <li>Прототипирование и дизайн</li>
-                  <li>Разработка основного функционала</li>
-                  <li>Подготовка к запуску</li>
-                </ul>
-                <button class="btn-select-tariff" data-tariff-id="mvp">Выбрать</button>
-              </div>
-            </li>
-
-            <li class="tariff-item">
-              <div class="tariff-card">
-                <h4 class="h4 tariff-name">Поддержка и развитие</h4>
-                <div class="tariff-price">по договорённости</div>
-                <ul class="tariff-features">
-                  <li class="highlight">Техническое сопровождение</li>
-                  <li>Регулярные обновления</li>
-                  <li>Мониторинг стабильности</li>
-                  <li>Консультации</li>
-                </ul>
-                <button class="btn-select-tariff" data-tariff-id="support">Выбрать</button>
-              </div>
-            </li>
-
-          </ul>
-
-          <div class="tariffs-footer">
-            <p class="tariffs-footer-text">Работаем с задачами разного масштаба. Стоимость и сроки можем обсуждать
-              индивидуально</p>
-            <button class="order-form-btn tariffs-footer-btn" data-nav-link>Обсудить задачу</button>
-          </div>
-
-        </section>
-
-      </article>
-
-
-      <!--
-        - #ORDER FORM
-      -->
-
-      <article class="order" data-page="заказать & обсудить задачу">
-
-        <header>
-          <h2 class="h2 article-title">Заказать & Обсудить задачу</h2>
-        </header>
-
-        <section class="order-form-section">
-
-          <form action="#" class="order-form" data-order-form>
-
-            <div class="form-group">
-              <label for="order-type" class="form-label">Тип заказа:</label>
-              <select name="order-type" id="order-type" class="form-select" required data-order-input>
-                <option value="">Выберите тип заказа</option>
-                <option value="game-dev">Разработка игр</option>
-                <option value="chatbot">Чат-бот</option>
-                <option value="ai-assistant">ИИ ассистент</option>
-                <option value="crm">CRM-система</option>
-                <option value="website">Веб-сайт</option>
-                <option value="mvp">MVP / Запуск продукта</option>
-                <option value="support">Поддержка и развитие</option>
-                <option value="testing">Тестирование</option>
-                <option value="other">Другое</option>
-              </select>
+        </nav>
+        <article
+          class="about active"
+          data-page="главная"
+          style="
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+          "
+        >
+          <header><h2 class="h2 article-title">Главная</h2></header>
+          <section class="hero-section-main">
+            <h1 class="hero-title-main">
+              Создаем цифровые решения, которые работают
+            </h1>
+            <p class="hero-subtitle">
+              От идеи до запуска. Разрабатываем сайты, приложения и цифровые
+              продукты для роста бизнеса. <br />Наш фокус — реальный результат:
+              рост продаж, автоматизация процессов и удобство для клиентов.
+            </p>
+            <div class="hero-badges">
+              <span class="badge-item">✓ Гарантия качества</span
+              ><span class="badge-item">✓ Соблюдение сроков</span
+              ><span class="badge-item">✓ Поддержка 24/7</span>
             </div>
-
-            <div class="form-group">
-              <label for="tariff" class="form-label">Тариф для сайта:</label>
-              <select name="tariff" id="tariff" class="form-select" required data-order-input>
-                <option value="">Выберите тариф</option>
-                <option value="basic">Базовый</option>
-                <option value="standard">Стандартный</option>
-                <option value="premium">Премиум</option>
-                <option value="custom">Индивидуальный</option>
-              </select>
+          </section>
+          <section class="about-text"></section>
+          <section class="service">
+            <h3 class="h3 service-title">Наши услуги</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Создание сайтов</h4>
+                  <p class="service-item-text">
+                    Разрабатываем сайты под задачи бизнеса — от лендингов до
+                    сложных веб-платформ с удобным управлением и
+                    масштабированием.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="automation icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Автоматизация бизнес-процессов
+                  </h4>
+                  <p class="service-item-text">
+                    Разрабатываем индивидуальные решения для автоматизации
+                    отдельных задач и процессов в бизнесе, подбирая оптимальный
+                    формат под текущие потребности.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mvp icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">MVP и запуск продуктов</h4>
+                  <p class="service-item-text">
+                    Помогаем превратить идею в работающий продукт: проектируем,
+                    разрабатываем MVP и подготавливаем к первому запуску.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="support icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Поддержка и развитие проектов
+                  </h4>
+                  <p class="service-item-text">
+                    Сопровождаем проекты после запуска: исправляем ошибки,
+                    дорабатываем функционал и развиваем продукт по мере роста
+                    бизнеса.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Создание игр</h4>
+                  <p class="service-item-text">
+                    Разрабатываем игровые и интерактивные проекты для различных
+                    платформ с акцентом на механику и качество реализации.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Создание научных проектов
+                  </h4>
+                  <p class="service-item-text">
+                    Разрабатываем исследовательские и научные проекты, создавая
+                    цифровые решения для анализа, экспериментов и
+                    образовательных задач.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="testing icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Тестирование и аудит</h4>
+                  <p class="service-item-text">
+                    Проверяем сайты и веб-приложения на ошибки, уязвимости и
+                    проблемы безопасности, повышая стабильность и доверие.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="ai bot icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">AI Чат-боты</h4>
+                  <p class="service-item-text">
+                    Разрабатываем умных ботов на базе ИИ для автоматизации
+                    поддержки клиентов, продаж и внутренних процессов.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="cta-section-main">
+            <div class="cta-content-main">
+              <p>
+                Свяжитесь с нами сегодня и получите бесплатную консультацию по
+                вашему проекту
+              </p>
+              <button class="cta-button" data-nav-link>Обсудить задачу</button>
             </div>
-
-            <div class="form-row">
+          </section>
+        </article>
+        <article class="portfolio" data-page="кейсы">
+          <header><h2 class="h2 article-title">Кейсы</h2></header>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>Все</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Веб-дизайн</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Приложения</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Веб-разработка</button>
+              </li>
+            </ul>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Выберите категорию
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>Все</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Веб-дизайн</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Приложения</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Веб-разработка</button>
+                </li>
+              </ul>
+            </div>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="веб-разработка"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Finance</h3>
+                  <p class="project-category">Веб-разработка</p>
+                  <p class="project-description">
+                    Финансовая панель управления для анализа расходов и доходов.
+                  </p></a
+                >
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="веб-разработка"
+              >
+                <div class="project-card-wrapper">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="digital-studio"
+                      loading="lazy"
+                    />
+                    <h3 class="project-title project-title-overlay">
+                      <a
+                        href="https://digital-studio.pages.dev"
+                        target="_blank"
+                        style="text-decoration: none; color: inherit"
+                        >digital-studio.pages.dev</a
+                      >
+                    </h3>
+                  </figure>
+                  <p class="project-category">Веб-разработка</p>
+                  <p class="project-description">
+                    Многостраничный сайт для цифрового агентства. Включает
+                    страницы с адаптивным дизайном и интерактивными элементами.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="веб-разработка"
+              >
+                <div class="project-card-wrapper">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/image hospital.png"
+                      alt="medicine-center"
+                      loading="lazy"
+                    />
+                    <h3 class="project-title project-title-overlay">
+                      <a
+                        href="https://medicinecenter.pages.dev/"
+                        target="_blank"
+                        style="text-decoration: none; color: inherit"
+                        >medicinecenter.pages.dev</a
+                      >
+                    </h3>
+                  </figure>
+                  <p class="project-category">Веб-разработка</p>
+                  <p class="project-description">
+                    Корпоративный сайт для медицинского или юридического центра
+                    с услугами, специалистами и системой онлайн-записи.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="веб-разработка"
+              >
+                <div class="project-card-wrapper">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/image car.png"
+                      alt="auto-market"
+                      loading="lazy"
+                    />
+                    <h3 class="project-title project-title-overlay">
+                      <a
+                        href="https://auto-market.pages.dev/"
+                        target="_blank"
+                        style="text-decoration: none; color: inherit"
+                        >auto-market.pages.dev</a
+                      >
+                    </h3>
+                  </figure>
+                  <p class="project-category">Веб-разработка</p>
+                  <p class="project-description">
+                    Многостраничный сайт для автосалона с каталогом автомобилей,
+                    фильтрацией и страницами отдельных предложений.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="веб-разработка"
+              >
+                <div class="project-card-wrapper">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/image lms.png"
+                      alt="lms-platform"
+                      loading="lazy"
+                    />
+                    <h3 class="project-title project-title-overlay">
+                      <a
+                        href="https://lmsplatform.pages.dev"
+                        target="_blank"
+                        style="text-decoration: none; color: inherit"
+                        >lmsplatform.pages.dev</a
+                      >
+                    </h3>
+                  </figure>
+                  <p class="project-category">Веб-разработка</p>
+                  <p class="project-description">
+                    Демонстрационный проект образовательной платформы с
+                    каталогом курсов, страницами обучения и личным кабинетом.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="веб-разработка"
+              >
+                <div class="project-card-wrapper">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/Pasted market.png"
+                      alt="marketly"
+                      loading="lazy"
+                    />
+                    <h3 class="project-title project-title-overlay">
+                      <a
+                        href="marketly-gallery.html"
+                        style="text-decoration: none; color: inherit"
+                        >Marketly</a
+                      >
+                    </h3>
+                  </figure>
+                  <p class="project-category">Веб-разработка</p>
+                  <p class="project-description">
+                    Интернет-магазин с каталогом товаров, корзиной, системой
+                    авторизации и оплаты.
+                  </p>
+                </div>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="приложения"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Brawlhalla</h3>
+                  <p class="project-category">Приложения</p></a
+                >
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="веб-дизайн"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-5.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">DSM.</h3>
+                  <p class="project-category">Веб-дизайн</p></a
+                >
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="веб-дизайн"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-6.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">MetaSpark</h3>
+                  <p class="project-category">Веб-дизайн</p></a
+                >
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="веб-разработка"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-7.png"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Summary</h3>
+                  <p class="project-category">Веб-разработка</p></a
+                >
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="приложения"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-8.jpg"
+                      alt="task manager"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Task Manager</h3>
+                  <p class="project-category">Приложения</p></a
+                >
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="веб-разработка"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-9.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Arrival</h3>
+                  <p class="project-category">Веб-разработка</p></a
+                >
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article class="tariffs" data-page="тарифы">
+          <header><h2 class="h2 article-title">Тарифы</h2></header>
+          <section class="tariffs-section">
+            <ul class="tariffs-list">
+              <li class="tariff-item">
+                <div class="tariff-card">
+                  <h4 class="h4 tariff-name">Быстрый запуск</h4>
+                  <div class="tariff-price">от 30 000 ₸</div>
+                  <ul class="tariff-features">
+                    <li>Простой лендинг</li>
+                    <li>До 5 страниц</li>
+                    <li>Базовая SEO-оптимизация</li>
+                    <li>Поддержка 1 месяц</li>
+                  </ul>
+                  <button class="btn-select-tariff" data-tariff-id="basic">
+                    Выбрать
+                  </button>
+                </div>
+              </li>
+              <li class="tariff-item">
+                <div class="tariff-card">
+                  <h4 class="h4 tariff-name">Решение под задачу</h4>
+                  <div class="tariff-price">от 100 000 ₸</div>
+                  <ul class="tariff-features">
+                    <li>Многостраничный сайт</li>
+                    <li>До 20 страниц</li>
+                    <li>Расширенная SEO-оптимизация</li>
+                    <li>Поддержка 3 месяца</li>
+                  </ul>
+                  <button class="btn-select-tariff" data-tariff-id="standard">
+                    Выбрать
+                  </button>
+                </div>
+              </li>
+              <li class="tariff-item">
+                <div class="tariff-card">
+                  <h4 class="h4 tariff-name">Разработка игр</h4>
+                  <div class="tariff-price">от 250 000 ₸</div>
+                  <ul class="tariff-features">
+                    <li class="highlight">Игровой проект средней сложности</li>
+                    <li>PC и Mobile</li>
+                    <li>Основной геймплей и визуал</li>
+                    <li>Поддержка 1 месяц</li>
+                  </ul>
+                  <button class="btn-select-tariff" data-tariff-id="game-dev">
+                    Выбрать
+                  </button>
+                </div>
+              </li>
+              <li class="tariff-item">
+                <div class="tariff-card">
+                  <h4 class="h4 tariff-name">Чат-бот</h4>
+                  <div class="tariff-price">от 40 000 ₸</div>
+                  <ul class="tariff-features">
+                    <li>Простой лендинг</li>
+                    <li>До 5 страниц</li>
+                    <li>Базовая SEO-оптимизация</li>
+                    <li>Поддержка 1 месяц</li>
+                  </ul>
+                  <button class="btn-select-tariff" data-tariff-id="chatbot">
+                    Выбрать
+                  </button>
+                </div>
+              </li>
+              <li class="tariff-item">
+                <div class="tariff-card">
+                  <h4 class="h4 tariff-name">CRM / автоматизация</h4>
+                  <div class="tariff-price">от 50 000 ₸</div>
+                  <ul class="tariff-features">
+                    <li>Многостраничный сайт</li>
+                    <li>До 20 страниц + Интеграция CMS</li>
+                    <li>Расширенная SEO-оптимизация</li>
+                    <li>Поддержка 3 месяца</li>
+                  </ul>
+                  <button class="btn-select-tariff" data-tariff-id="crm">
+                    Выбрать
+                  </button>
+                </div>
+              </li>
+              <li class="tariff-item">
+                <div class="tariff-card">
+                  <h4 class="h4 tariff-name">ИИ ассистент</h4>
+                  <div class="tariff-price">от 100 000 ₸</div>
+                  <ul class="tariff-features">
+                    <li class="highlight">
+                      Разработка интеллектуального ассистента
+                    </li>
+                    <li>Интеграция CRM и API</li>
+                    <li>Поддержка 3 месяцев</li>
+                  </ul>
+                  <button
+                    class="btn-select-tariff"
+                    data-tariff-id="ai-assistant"
+                  >
+                    Выбрать
+                  </button>
+                </div>
+              </li>
+              <li class="tariff-item">
+                <div class="tariff-card">
+                  <h4 class="h4 tariff-name">Тестирование и аудит</h4>
+                  <div class="tariff-price">от 20 000 ₸</div>
+                  <ul class="tariff-features">
+                    <li class="highlight">Проверка сайта на уязвимости</li>
+                    <li>Поиск ошибок и багов</li>
+                    <li>Анализ логики и устойчивости</li>
+                    <li>Рекомендации по улучшению</li>
+                  </ul>
+                  <button class="btn-select-tariff" data-tariff-id="testing">
+                    Выбрать
+                  </button>
+                </div>
+              </li>
+              <li class="tariff-item">
+                <div class="tariff-card">
+                  <h4 class="h4 tariff-name">MVP / запуск продукта</h4>
+                  <div class="tariff-price">от 100 000 ₸</div>
+                  <ul class="tariff-features">
+                    <li class="highlight">Для стартапов и новых продуктов</li>
+                    <li>Прототипирование и дизайн</li>
+                    <li>Разработка основного функционала</li>
+                    <li>Подготовка к запуску</li>
+                  </ul>
+                  <button class="btn-select-tariff" data-tariff-id="mvp">
+                    Выбрать
+                  </button>
+                </div>
+              </li>
+              <li class="tariff-item">
+                <div class="tariff-card">
+                  <h4 class="h4 tariff-name">Поддержка и развитие</h4>
+                  <div class="tariff-price">по договорённости</div>
+                  <ul class="tariff-features">
+                    <li class="highlight">Техническое сопровождение</li>
+                    <li>Регулярные обновления</li>
+                    <li>Мониторинг стабильности</li>
+                    <li>Консультации</li>
+                  </ul>
+                  <button class="btn-select-tariff" data-tariff-id="support">
+                    Выбрать
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <div class="tariffs-footer">
+              <p class="tariffs-footer-text">
+                Работаем с задачами разного масштаба. Стоимость и сроки можем
+                обсуждать индивидуально
+              </p>
+              <button class="order-form-btn tariffs-footer-btn" data-nav-link>
+                Обсудить задачу
+              </button>
+            </div>
+          </section>
+        </article>
+        <article class="order" data-page="заказать & обсудить задачу">
+          <header>
+            <h2 class="h2 article-title">Заказать & Обсудить задачу</h2>
+          </header>
+          <section class="order-form-section">
+            <div class="form-intro">
+              <p>
+                Заполните форму ниже, и мы свяжемся с вами в течение 24 часов
+                для обсуждения вашего проекта
+              </p>
+            </div>
+            <form action="#" class="order-form" data-order-form>
               <div class="form-group">
-                <label for="fullname" class="form-label">Ваше имя:</label>
-                <input type="text" name="fullname" id="fullname" class="form-input" placeholder="Ваше имя" required
-                  data-order-input>
+                <label for="order-type" class="form-label">Тип заказа:</label
+                ><select
+                  name="order-type"
+                  id="order-type"
+                  class="form-select"
+                  required
+                  data-order-input
+                >
+                  <option value="">Выберите тип заказа</option>
+                  <option value="game-dev">Разработка игр</option>
+                  <option value="chatbot">Чат-бот</option>
+                  <option value="ai-assistant">ИИ ассистент</option>
+                  <option value="crm">CRM-система</option>
+                  <option value="website">Веб-сайт</option>
+                  <option value="mvp">MVP / Запуск продукта</option>
+                  <option value="support">Поддержка и развитие</option>
+                  <option value="testing">Тестирование</option>
+                  <option value="other">Другое</option>
+                </select>
               </div>
-
               <div class="form-group">
-                <label for="phone" class="form-label">Ваш телефон:</label>
-                <input type="tel" name="phone" id="phone" class="form-input" placeholder="Ваш телефон" required
-                  data-order-input>
+                <label for="tariff" class="form-label">Тариф для сайта:</label
+                ><select
+                  name="tariff"
+                  id="tariff"
+                  class="form-select"
+                  required
+                  data-order-input
+                >
+                  <option value="">Выберите тариф</option>
+                  <option value="basic">Базовый</option>
+                  <option value="standard">Стандартный</option>
+                  <option value="premium">Премиум</option>
+                  <option value="custom">Индивидуальный</option>
+                </select>
               </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullname" class="form-label">Ваше имя:</label
+                  ><input
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    class="form-input"
+                    placeholder="Ваше имя"
+                    required
+                    data-order-input
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">Ваш телефон:</label
+                  ><input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    class="form-input"
+                    placeholder="Ваш телефон"
+                    required
+                    data-order-input
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="description" class="form-label"
+                  >Описание проекта:</label
+                ><textarea
+                  name="description"
+                  id="description"
+                  class="form-textarea"
+                  placeholder="Опишите ваш проект подробно. Чем больше деталей, тем точнее мы сможем оценить задачу и предложить решение..."
+                  rows="10"
+                  maxlength="5000"
+                  required
+                  data-order-input
+                ></textarea>
+              </div>
+              <button
+                class="order-form-btn"
+                type="submit"
+                disabled
+                data-order-btn
+              >
+                <ion-icon name="paper-plane"></ion-icon
+                ><span>Отправить заказ</span>
+              </button>
+            </form>
+          </section>
+        </article>
+        <article class="contact" data-page="связаться">
+          <header><h2 class="h2 article-title">связаться</h2></header>
+          <section class="contact-links">
+            <div class="links-grid">
+              <a
+                href="https://www.linkedin.com/in/nurbek-abildaev-b1b277345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                class="contact-link-card"
+                ><span class="link-tag">link</span
+                ><span class="link-name">LinkedIn</span>
+                <p class="link-desc">
+                  Профессиональный профиль и деловое общение.
+                </p></a
+              ><a
+                href="https://www.instagram.com/nurjaks_89?utm_source=qr&igsh=MWg3dDVlZ2I2cGpkbA=="
+                target="_blank"
+                class="contact-link-card"
+                ><span class="link-tag">link</span
+                ><span class="link-name">Instagram</span>
+                <p class="link-desc">
+                  Быстрый способ связи и обсуждения проекта.
+                </p></a
+              ><a
+                href="https://www.facebook.com/profile.php?id=100054921349803&locale=ru_RU"
+                target="_blank"
+                class="contact-link-card"
+                ><span class="link-tag">link</span
+                ><span class="link-name">Facebook</span>
+                <p class="link-desc">
+                  Следите за новостями и обновлениями в социальной сети.
+                </p></a
+              >
             </div>
-
-            <div class="form-group">
-              <label for="description" class="form-label">Описание проекта:</label>
-              <textarea name="description" id="description" class="form-textarea"
-                placeholder="Опишите ваш проект подробно. Чем больше деталей, тем точнее мы сможем оценить задачу и предложить решение..."
-                rows="10" maxlength="5000" required data-order-input></textarea>
-            </div>
-
-            <button class="order-form-btn" type="submit" disabled data-order-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Отправить заказ</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="связаться">
-
-        <header>
-          <h2 class="h2 article-title">связаться</h2>
-        </header>
-
-        <section class="contact-links">
-
-          <div class="links-grid">
-
-
-            <a href="https://www.linkedin.com/in/nurbek-abildaev-b1b277345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              target="_blank" class="contact-link-card">
-              <span class="link-tag">link</span>
-              <span class="link-name">LinkedIn</span>
-              <p class="link-desc">
-                Профессиональный профиль и деловое общение.
-              </p>
-            </a>
-
-            <a href="https://www.instagram.com/nurjaks_89?utm_source=qr&igsh=MWg3dDVlZ2I2cGpkbA==" target="_blank"
-              class="contact-link-card">
-              <span class="link-tag">link</span>
-              <span class="link-name">Instagram</span>
-              <p class="link-desc">
-                Быстрый способ связи и обсуждения проекта.
-              </p>
-            </a>
-
-            <a href="https://www.facebook.com/profile.php?id=100054921349803&locale=ru_RU" target="_blank"
-              class="contact-link-card">
-              <span class="link-tag">link</span>
-              <span class="link-name">Facebook</span>
-              <p class="link-desc">
-                Следите за новостями и обновлениями в социальной сети.
-              </p>
-            </a>
-          </div>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js" defer></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+          </section>
+          <footer class="site-footer">
+            <section class="footer-contacts-section">
+              <div class="footer-contacts">
+                <a
+                  href="mailto:nurtech.dev@gmail.com"
+                  class="footer-contact-item"
+                  ><ion-icon name="mail-outline"></ion-icon
+                  ><span class="contact-label">EMAIL</span
+                  ><span class="contact-value">nurtech.dev@gmail.com</span></a
+                ><a href="tel:+77002174701" class="footer-contact-item"
+                  ><ion-icon name="phone-portrait-outline"></ion-icon
+                  ><span class="contact-label">ТЕЛЕФОН</span
+                  ><span class="contact-value">+7 (700) 217-47-01</span></a
+                >
+              </div>
+            </section>
+          </footer>
+        </article>
+      </div>
+    </main>
+    <script src="./assets/js/script.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
